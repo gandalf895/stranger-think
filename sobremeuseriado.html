@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para responsividade -->
+    <title>Stranger Things Comentários HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte do Google Fonts -->
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp4428216.jpg'); /* Fundo da página */
+            background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            font-family: 'Roboto', sans-serif; /* Aplica a fonte Roboto */
+            color: white; /* Cor padrão do texto */
+            margin: 0; /* Remove margens padrão do navegador */
+            padding: 0; /* Remove preenchimento padrão do navegador */
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-size: 35px; /* Corrigido para incluir a unidade */
+            color: red;
+            margin: 20px 0; /* Adiciona margens verticais */
+        }
+
+        p {
+            font-size: 30px; /* Corrigido para incluir a unidade */
+            margin: 10px 20px; /* Margens para espaçamento no texto */
+        }
+
+        img {
+            width: 100%; /* A imagem ocupa 100% da largura da tela */
+            height: auto; /* A altura é ajustada proporcionalmente */
+            max-width: 1000px; /* Limita a largura máxima da imagem */
+            display: block; /* Para garantir que a imagem não tenha espaço extra em baixo */
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+
+        /* Media query para ajustar o texto em telas menores */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px; /* Tamanho do título menor em telas pequenas */
+            }
+
+            p {
+                font-size: 24px; /* Tamanho do parágrafo menor em telas pequenas */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // Exibir alerta moderno como modal
+        function showAlert() {
+            const alertBox = document.createElement('div');
+            alertBox.innerText = "Tudo sobre Stranger Things";
+            alertBox.style.position = 'fixed';
+            alertBox.style.top = '50%';
+            alertBox.style.left = '50%';
+            alertBox.style.transform = 'translate(-50%, -50%)';
+            alertBox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            alertBox.style.color = 'white';
+            alertBox.style.padding = '20px';
+            alertBox.style.borderRadius = '10px';
+            alertBox.style.zIndex = '1000';
+            document.body.appendChild(alertBox);
+            setTimeout(() => {
+                document.body.removeChild(alertBox);
+            }, 3000); // Alerta desaparece após 3 segundos
+        }
+
+        showAlert(); // Chama a função para mostrar o alerta
+    </script>
+
+    <h1>Onde se passa e sobre o que está a série</h1>
+    <img src="https://wallpapercave.com/wp/wp5522060.jpg" alt="Imagem da série Stranger Things">
+
+    <p>A série Stranger Things se passa na cidade fictícia de Hawkins, Indiana, nos Estados Unidos.
+    A história começa em 1983 com o desaparecimento misterioso de um garoto chamado Will Byers. Durante a investigação,
+    seus amigos encontram uma garota com poderes telecinéticos chamada Eleven, e juntos,
+    eles descobrem uma passagem para uma dimensão paralela conhecida como o Mundo Invertido.</p>
+
+    <h2>Mundo Invertido: o que é?</h2>
+    <img src="https://www.einerd.com.br/wp-content/uploads/2020/02/Mundo-Invertido-capa.jpg" alt="Mundo Invertido">
+    <p>Em uma coisa é sabida com alguma certeza: o mundo invertido é uma espécie de outra dimensão,
+    uma realidade que existe paralelamente ao universo onde os personagens vivem.
+    Por um tempo, os personagens da série também chamaram a outra dimensão de “Vale das Sombras”,
+    fazendo uma referência à explicação presente no livro de regras de Dungeons & Dragons. 
+    “Está bem perto de você e você nem mesmo vê”, diz a descrição feita pelo RPG.
+    O mundo invertido é fisicamente igual à realidade, com as mesmas construções, ruas, florestas e afins,
+    mas com o espaço e o tempo distorcidos. Além disso, os locais conhecidos estão tortos, vazios, 
+    horripilantes e parecem simulações. Resumidamente, é como se fosse uma versão sombria, 
+    grotesca e sem vida do mundo real.</p>
+</body>
+</html>
